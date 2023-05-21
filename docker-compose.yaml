@@ -8,6 +8,7 @@ services:
         target: /app/src
         read_only: false
       - /tmp/.X11-unix:/tmp/.X11-unix
+      - ~/.Xauthority:/root/.Xauthority
     environment:
       - DISPLAY=${DISPLAY}
     network_mode: host
