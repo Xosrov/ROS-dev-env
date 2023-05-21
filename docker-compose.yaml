@@ -9,6 +9,7 @@ services:
         read_only: false
       - /tmp/.X11-unix:/tmp/.X11-unix
       - ~/.Xauthority:/root/.Xauthority
+      - /dev/dri:/dev/dri
     environment:
       - DISPLAY=${DISPLAY}
     network_mode: host
