@@ -4,8 +4,8 @@ services:
     build: .
     volumes:
       - type: bind
-        source: ./src
-        target: /app/src
+        source: .
+        target: /app
         read_only: false
       - /tmp/.X11-unix:/tmp/.X11-unix
       - ~/.Xauthority:/root/.Xauthority

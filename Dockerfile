@@ -12,4 +12,4 @@ RUN echo "source /opt/ros/noetic/setup.bash" >> /root/.bashrc
 
 RUN git config --global user.email "seyed.alireza.miryazdi@gmail.com" && git config --global user.name "Xosrov" && git config --global --add safe.directory /app/src
 
-WORKDIR /app
+WORKDIR /app/src
